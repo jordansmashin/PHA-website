@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Presidents House Association</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+<script>/* making the title text for the top banner */</script>
+
+        <section id="banner">
+        <div class="banner-text">
+        <h1>The Presidents House Association</h1>
+        <div class="banner-btn">
+        </div>
+    
+    </div>
+
+
+</section>
+ 
+
+<script>/* adding in links to different pages on the sidebar */</script>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="indexDEV.html">Home</a></li>
+        <li><a href="log in pageDEV.html">Log In</a></li>
+        <li><a href="about usDEV.html">About Us</a></li>
+        <li><a href="Current OfficersDEV.html">Current Officers</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/Modern House Logo.png" id="menu">
+</div>
+
+<script>
+   
+   /* pulling various animation resources */
+
+    var menuBtn = document.getElementById("menuBtn")
+    var menuBtn = document.getElementById("sideNav")
+    var menuBtn = document.getElementById("menu")
+
+    /* setting the default position of the sidebar */
+    sideNav.style.left = "-200px";
+
+   /* adding the ability to toggle the sidebar by hovering over it and leaving the navigation bar */
+   
+   menuBtn.onmouseover = function(){
+        if(sideNav.style.left == "-200px"){
+            sideNav.style.left = "0";   
+        }
+        else{
+            sideNav.style.left = "-250px";
+            
+        }
+        sideNav.onmouseleave = function(){
+            if(sideNav.style.left == "-200px"){
+            sideNav.style.left = "0";
+            
+        }
+        else{
+            sideNav.style.left = "-200px";
+           
+        }  
+        }
+    }
+
+</script>
+
+
+        </body>
+        </html>
